@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView android:id="@+id/txt_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practcal-33"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#AFB42B"/>
+    <TextView  android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Box Example"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#AFB42B"
+        android:layout_below="@id/txt_main"
+        android:layout_margin="30dp"/>
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_1"
+        android:layout_margin="25dp">
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</RelativeLayout>

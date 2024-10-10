@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txt_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Dialer Application"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#1976D2"/>
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Enter Phone number:"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_main"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_main"
+            android:layout_toRightOf="@id/txt_phone"
+            android:hint="Enter Phone Number"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" SAVE "
+            android:backgroundTint="#AFB42B"
+            android:textSize="25sp"
+            android:layout_below="@id/txt_phone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:padding="15dp"/>
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" CALL "
+            android:backgroundTint="#AFB42B"
+            android:textSize="25sp"
+            android:layout_below="@id/txt_phone"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn_save"/>
+</RelativeLayout>
